@@ -32,3 +32,6 @@ echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlight
 brew install autojump
 echo "[ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh" >> ~/.zshrc
 source ~/.zshrc
+
+# Setup vim
+echo "set number\nsyntax on\nset showmode\nset showcmd\nset mouse=a\nset autoindent" > ~/.vimrc
