@@ -33,5 +33,8 @@ brew install autojump
 echo "[ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh" >> ~/.zshrc
 source ~/.zshrc
 
+# PATH in zshrc, avoid duplicates
+export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
+
 # Setup vim
 echo "set number\nsyntax on\nset showmode\nset showcmd\nset mouse=a\nset autoindent" > ~/.vimrc
