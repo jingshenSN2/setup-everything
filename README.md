@@ -23,8 +23,21 @@ I recommend to run the scripts in the following order:
 . ./vscode.sh
 ```
 
+### 3. Backend
+
+```bash
+. ./docker.sh
+```
+
+### 4. Frontend
+
+```bash
+. ./node.sh
+```
+
 ## Outcomes
 
+### Basic
 - Homebrew: `brew` to install packages
 - iTerm2: terminal replacement
 - Oh My Zsh: bash replacement with spaceship theme and plugins:
@@ -32,6 +45,14 @@ I recommend to run the scripts in the following order:
     - zsh-syntax-highlighting: syntax highlight
     - autojump: use `j` to jump to a directory
 - The**: use `f` to automatically fix typo in the previous command
+
+### Code Dev
 - Vim: with line numbers, syntax highlight, mouse support, and other configs
 - Git: with user name and email set, `ci`, `co`, `br`, `st` aliases, auto pull with rebase, auto push with set-upstream
 - Vscode: `code` installed in PATH, Copilot and Git Graph extensions, Stardew Valley theme installed
+
+### Backend
+- Docker: with `docker` and `docker-compose` installed (actually it's podman aliasing docker)
+
+### Frontend
+- Node: with `node` and `npm` installed

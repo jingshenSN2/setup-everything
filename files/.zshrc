@@ -109,5 +109,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Alias to thefuck
+# Aliases
 eval $(thefuck --alias f)
+alias docker=podman
