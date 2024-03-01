@@ -76,7 +76,8 @@ SPACESHIP_USER_COLOR="212"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git autojump)
+
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
@@ -112,3 +113,4 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 eval $(thefuck --alias f)
 alias docker=podman
+alias docker-compose=podman-compose
